@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="" />
+    <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/src/config/expressModuleOptions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/config/nuxtModuleOptions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/guide/authentication.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/guide/features.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/guide/pages.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/guide/plugins.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/guide/store.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/components/Nav.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/config/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-dark/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-dark/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1lnutjIco0lur3cRRdkmggXy21M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,16 +43,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/src/config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/src/config" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="yarn add --dev vuepress-theme-dark" />
       <command value="yarn add vuepress-theme-default-prefers-color-scheme" />
+      <command value="yarn add vuepress-plugin-auto-sidebar" />
+      <command value="yarn add vuepress-bar" />
     </option>
   </component>
   <component name="RunManager">
@@ -60,10 +92,27 @@
       <workItem from="1609713176955" duration="1363000" />
       <workItem from="1609823287279" duration="3410000" />
       <workItem from="1609971147166" duration="3195000" />
+      <workItem from="1610059331278" duration="803000" />
+      <workItem from="1610316028182" duration="1742000" />
+      <workItem from="1610408831170" duration="6969000" />
+      <workItem from="1610421746732" duration="1176000" />
+      <workItem from="1610678751823" duration="3957000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

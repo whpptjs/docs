@@ -47,12 +47,27 @@ module.exports = {
       '/guide/': [
         {
           title: 'Guide',
-          collapsable: false,
+          collapsable: true,
           children: [
             'installation',
+            'authentication',
+            'features',
+            'plugins',
+            'store',
+            'pages'
           ]
         }
       ],
+      '/config/': [
+        {
+          title: 'Config',
+          collapsable: true,
+          children: [
+            'nuxtModuleOptions',
+            'expressModuleOptions',
+          ]
+        }
+      ]
     }
   },
   /**

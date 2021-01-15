@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "vuepress-theme-dark": "^0.1.0"
   },
   "dependencies": {
     "vuepress-theme-default-prefers-color-scheme": "^2.0.0"

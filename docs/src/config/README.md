@@ -1,15 +1,3 @@
----
-sidebar: auto
----
-
 # Config
 
-## foo
-
-- Type: `string`
-- Default: `/`
-
-## bar
-
-- Type: `string`
-- Default: `/`
+Into to config and setting go here.
