@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/src/config/expressModuleOptions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/config/nuxtModuleOptions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/guide/authentication.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/guide/features.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/guide/pages.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/guide/plugins.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/guide/store.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/components/Nav.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/config/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/guide/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-dark/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-dark/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/pages.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/pages.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/plugins.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +84,11 @@
       <workItem from="1610316028182" duration="1742000" />
       <workItem from="1610408831170" duration="6969000" />
       <workItem from="1610421746732" duration="1176000" />
-      <workItem from="1610678751823" duration="3957000" />
+      <workItem from="1610678751823" duration="4635000" />
+      <workItem from="1610922144116" duration="3092000" />
+      <workItem from="1611095043902" duration="32000" />
+      <workItem from="1611179338506" duration="4443000" />
+      <workItem from="1611186120804" duration="280000" />
     </task>
     <servers />
   </component>

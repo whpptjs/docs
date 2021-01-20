@@ -29,3 +29,26 @@ new NuxtJS app.
 
 - A vuex store is required, initialise store.
 - List available modules, link to /guide/store
+
+## The .env file
+
+- APP_KEY
+- MONGO_URL
+- MONGO_DB
+- MONGO_DB_PUB
+- BASE_URL
+- BASE_API_URL
+- BASE_IMAGE_URL
+- DRAFT
+- DEBUG
+- See /config for all available env variables
+
+## Creating a user
+- run `create-user` script in package.json or commandline `gen-root-user`
+- Fill in prompts (username, email, password, password_confirm)
+- Login
+
+## Setting up a Domain
+- Open config window
+- Create a domain
+- Making it active will add localhost as a domain for development
