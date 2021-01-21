@@ -6,12 +6,12 @@
 
 ```js
 export default {
-  name: 'Generic',
+  name: "Generic",
   pageSettings: {},
   pageType: {
-    name: '',
-    label: '',
-    collection: { name: '' },
+    name: "",
+    label: "",
+    collection: { name: "" },
     templates: [],
     components: [],
   },
@@ -27,7 +27,7 @@ export default {
 - templates
 
 ### lifecycle hooks
- 
+
 - beforePublish
 - afterPublish
 - beforeUnpublish

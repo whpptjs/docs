@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description } = require("../../package");
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'WhpptJS',
+  title: "WhpptJS",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,67 +16,83 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
-  theme: 'default-prefers-color-scheme',
+  theme: "default-prefers-color-scheme",
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    prefersTheme: 'dark',
-    repo: '',
+    prefersTheme: "dark",
+    repo: "",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "",
+    editLinkText: "",
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: "Guide",
+        link: "/guide/gettingStarted/prerequisites",
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: "Api",
+        link: "/api/",
       },
+      // {
+      //   text: "Versions",
+      //   items: [{ text: "Version 2", link: "https://v2.whppt.org" }],
+      // },
     ],
     sidebar: {
-      '/guide/': [
+      "/guide/": [
         {
-          title: 'Guide',
-          path: '/guide',
+          title: "Guide",
           collapsable: false,
           children: [
-            'installation',
-            'plugins',
-            'pages',
-            'store',
-            'features',
-            'authentication',
-          ]
-        }
+            {
+              title: "Getting started",
+              collapsable: false,
+              sidebarDepth: 1,
+              children: [
+                "gettingStarted/prerequisites",
+                "gettingStarted/installation",
+                "gettingStarted/structure",
+                "gettingStarted/pages",
+                "gettingStarted/directives",
+                "gettingStarted/components",
+                "gettingStarted/store",
+                "gettingStarted/authentication",
+                "gettingStarted/plugins",
+              ],
+            },
+            {
+              title: "Deployment",
+              collapsable: false,
+              sidebarDepth: 1,
+              children: ["deployment/environment"],
+            },
+          ],
+        },
       ],
-      '/config/': [
+      "/api/": [
         {
-          title: 'Config',
-          path: '/config',
+          title: "API",
+          path: "/api/",
           collapsable: false,
-          children: [
-            'nuxtModuleOptions',
-            'expressModuleOptions',
-          ]
-        }
-      ]
-    }
+          children: ["config", "users/cli", "domains"],
+        },
+      ],
+    },
   },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ],
-}
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+};
