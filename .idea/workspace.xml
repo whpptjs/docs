@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/src/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/pages.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/pages.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/plugins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
       <command value="yarn add vuepress-theme-default-prefers-color-scheme" />
       <command value="yarn add vuepress-plugin-auto-sidebar" />
       <command value="yarn add vuepress-bar" />
+      <command value="yarn add vuepress-plugin-smooth-scroll" />
     </option>
   </component>
   <component name="RunManager">
@@ -89,6 +91,7 @@
       <workItem from="1611095043902" duration="32000" />
       <workItem from="1611179338506" duration="4443000" />
       <workItem from="1611186120804" duration="280000" />
+      <workItem from="1611263895647" duration="1439000" />
     </task>
     <servers />
   </component>
