@@ -65,11 +65,11 @@ module.exports = {
                 "gettingStarted/installation",
                 "gettingStarted/structure",
                 "gettingStarted/pages",
+                "gettingStarted/plugins",
                 "gettingStarted/directives",
                 "gettingStarted/components",
                 "gettingStarted/store",
                 "gettingStarted/authentication",
-                "gettingStarted/plugins",
               ],
             },
             {
