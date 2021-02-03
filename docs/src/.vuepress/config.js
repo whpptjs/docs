@@ -1,4 +1,4 @@
-const { description } = require("../../package");
+const {description} = require("../../package");
 
 module.exports = {
   /**
@@ -16,11 +16,11 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ["meta", { name: "theme-color", content: "#3eaf7c" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    ["meta", {name: "theme-color", content: "#3eaf7c"}],
+    ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
     [
       "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+      {name: "apple-mobile-web-app-status-bar-style", content: "black"},
     ],
   ],
   theme: "default-prefers-color-scheme",
@@ -86,7 +86,17 @@ module.exports = {
           title: "API",
           path: "/api/",
           collapsable: false,
-          children: ["config", "users/cli", "domains"],
+          children: [
+            "config", "users/cli", "domains", {
+              title: 'Plugins', collapsable: false, sidebarDepth: 1, children: [
+                "plugins/pageType",
+                "plugins/pageSettings",
+                "plugins/siteSettings",
+                "plugins/dashboard",
+                "plugins/editors",
+              ]
+            },
+          ],
         },
       ],
     },

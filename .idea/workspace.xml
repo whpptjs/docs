@@ -2,48 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/powered-by-vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/.vuepress/components/Sponsor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/pageSettings.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/components.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/components.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/installation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/pages.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/pages.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/docs/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/dist/smoothscroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/smoothscroll-polyfill/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/clientRootMixin.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/clientRootMixin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/clientRootMixin.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/lib/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-plugin-smooth-scroll/styles/index.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/layouts/Layout.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/styles/components.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/styles/index.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vuepress-theme-default-prefers-color-scheme/styles/palette.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +50,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/docs/src/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/src/.vuepress" />
+      <recent name="$PROJECT_DIR$/docs/src/.vuepress/theme/layouts" />
+      <recent name="$PROJECT_DIR$/docs/src/.vuepress/theme" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -143,7 +111,8 @@
       <workItem from="1611537929345" duration="1069000" />
       <workItem from="1611719708271" duration="4182000" />
       <workItem from="1612222328815" duration="3461000" />
-      <workItem from="1612235602764" duration="756000" />
+      <workItem from="1612235602764" duration="1499000" />
+      <workItem from="1612314087215" duration="10384000" />
     </task>
     <servers />
   </component>
