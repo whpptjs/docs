@@ -47,12 +47,12 @@ Alright, lets break down what's happening above. First off, we have a `vuex acti
 `vuex modules` for us to leverage. Read more about the store modules [here](/guide/gettingStarted/store). In this case we're 
 accessing the `loadPage` action from the `whppt/page` store module.
 
-`loadPage` takes in 1 argument, this is an object that can have 3 properties, slug, pageType and collection. Firstly, the 
+`loadPage` takes in 1 argument, this is an object that can have 3 properties, `slug`, `pageType` and `collection`. Firstly, the 
 slug will come from your pathMatch, e.g. if I visit `/hello` in the browser my slug will be `hello`. 
 
 Next, we have the `pageType` and the `collection`. At least one of these is needed to find the correct data to load. `pageType` 
 will be a reference to the Whppt plugin's `pageType` and the `collection` will refer to the plugin's collection. It is entirely
-up to you as to which one you need to use to load your page. 
+up to you as to which one use when loading your page. 
 
 With the above, there's one thing missing, we're trying to load something that does not yet exist. In the next section we'll look 
-at getting our first [Whppt plugin](/guide/gettingStarted/store) setup and how we can create a page so that the above setup will work.
+at getting our first [Whppt plugin](/guide/gettingStarted/plugins) setup and how we can create a page so that the above setup will work.

@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/src/.vuepress/components/Sponsor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/pageSettings.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/pages.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/pages.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -113,6 +130,7 @@
       <workItem from="1612222328815" duration="3461000" />
       <workItem from="1612235602764" duration="1499000" />
       <workItem from="1612314087215" duration="10384000" />
+      <workItem from="1612737290513" duration="2525000" />
     </task>
     <servers />
   </component>
@@ -130,5 +148,31 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1419" height="223" key="GridCell.Tab.0.bottom" timestamp="1612739818809">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1612739818809" />
+    <state width="1419" height="223" key="GridCell.Tab.0.center" timestamp="1612739818808">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1612739818808" />
+    <state width="1419" height="223" key="GridCell.Tab.0.left" timestamp="1612739818807">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1612739818807" />
+    <state width="1419" height="223" key="GridCell.Tab.0.right" timestamp="1612739818808">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1612739818808" />
+    <state x="422" y="201" width="595" height="522" key="find.popup" timestamp="1612737469819">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="422" y="201" width="595" height="522" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1612737469819" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1612738432695">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1612738432695" />
   </component>
 </project>
