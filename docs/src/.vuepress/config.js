@@ -89,7 +89,7 @@ module.exports = {
           children: [
             "config", "users/cli", "domains", {
               title: 'Plugins', collapsable: false, sidebarDepth: 1, children: [
-                "plugins/pageType",
+                // "plugins/pageType",
                 "plugins/pageSettings",
                 "plugins/siteSettings",
                 "plugins/dashboard",

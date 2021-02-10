@@ -92,7 +92,7 @@ The example above, once the plugin has been registered with whppt, will populate
 
 ### pageSettings
 
-> [api](/api/plugins/pageSettings)
+- [api](/api/plugins/pageSettings)
 
 Within whppt there is a menu that is available at a page level. The page settings menu has multiple built in tabs that
 give users the ability to change settings such as metadata for an individual page. Using the `pageSettings` object
@@ -105,7 +105,7 @@ General, SEO, Open Graph, Twitter and Roles. You can read more about these tabs 
 
 ### siteSettings
 
-> [api](api/plugins/siteSettings)
+- [api](api/plugins/siteSettings)
 
 The `siteSettings` key is similar to `pageSettings` except that its concern will be at a site level rather than a single 
 page. For example if we wanted to allow the content manager of the site the ability to change a banner message on the site 
@@ -116,7 +116,7 @@ The site settings dialog in WhpptJS will register multiple tabs out of the box f
 
 ### dashboard
 
-> [api](api/plugins/dashboard)
+- [api](api/plugins/dashboard)
 
 The `dashboard` key is another way of registering a component into WhpptJS. Dashboard can expose a similar concept to the
 `siteSettings` key, but the dashboard tabs should have a focus on visualising data e.g. tables or graphs. There's no 
@@ -127,13 +127,15 @@ Users.
 
 ### editors
 
-> [api](api/plugins/editors)
+- [api](api/plugins/editors)
 
 `editors` are a handy way to create custom directives and components that expose your own way to edit content within the
 WhpptJS sidebar. Each editor can provide a custom directive but, if a directive isn't provided, the editor will register
 one for you. 
 
 ### lifecycle hooks
+
+
 
 - beforePublish
 - afterPublish
