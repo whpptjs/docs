@@ -23,14 +23,12 @@ module.exports = {
       {name: "apple-mobile-web-app-status-bar-style", content: "black"},
     ],
   ],
-  theme: "default-prefers-color-scheme",
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    prefersTheme: "dark",
     repo: "",
     editLinks: false,
     docsDir: "",

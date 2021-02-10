@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/dashboard.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/editors.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/pageType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/siteSettings.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/.vuepress/theme/noopModule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/components/Sponsor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/components/Sponsor.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/api/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <command value="yarn add vuepress-plugin-smooth-scroll" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/docs/package.json" />
       <command value="run" />
@@ -112,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +145,7 @@
       <workItem from="1612314087215" duration="10824000" />
       <workItem from="1612314087215" duration="10384000" />
       <workItem from="1612737290513" duration="2525000" />
-      <workItem from="1612920606928" duration="553000" />
+      <workItem from="1612920606928" duration="3344000" />
     </task>
     <servers />
   </component>

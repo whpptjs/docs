@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sponsor">
     <svg width="209" height="40" viewBox="0 0 209 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
           d="M0 5C0 2.23858 2.23858 0 5 0H204C206.761 0 209 2.23858 209 5V35C209 37.7614 206.761 40 204 40H5C2.23858 40 0 37.7614 0 35V5Z"
@@ -19,4 +19,12 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  .sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 1rem;
+  }
+</style>
