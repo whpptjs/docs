@@ -57,16 +57,20 @@
     >
       {{ data.footer }}
     </div>
+    <div>
+      <Sponsor />
+    </div>
   </main>
 </template>
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
+import Sponsor from "../../components/Sponsor";
 
 export default {
   name: 'Home',
 
-  components: { NavLink },
+  components: {Sponsor, NavLink },
 
   computed: {
     data () {
