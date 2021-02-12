@@ -92,6 +92,8 @@ module.exports = {
                 "plugins/siteSettings",
                 "plugins/dashboard",
                 "plugins/editors",
+                "plugins/lifecycleHooks",
+                "plugins/templates",
               ]
             },
           ],
@@ -102,5 +104,5 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom", "vuepress-plugin-smooth-scroll"],
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom", "vuepress-plugin-smooth-scroll", '@vuepress/register-components'],
 };

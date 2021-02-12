@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/lifecycleHooks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/plugins/templates.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/components/Sponsor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/components/Sponsor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/theme/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/plugins.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +86,7 @@
       <command value="yarn add vuepress-plugin-auto-sidebar" />
       <command value="yarn add vuepress-bar" />
       <command value="yarn add vuepress-plugin-smooth-scroll" />
+      <command value="yarn add -D @vuepress/plugin-register-components" />
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">

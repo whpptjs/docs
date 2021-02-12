@@ -1,7 +1,3 @@
----
-sidebarDepth: 3
----
-
 # Whppt Plugins
 
 One of the core concepts of WhpptJS is the ability to create plugins.
@@ -67,13 +63,9 @@ export default ({ app }) => {
 };
 ```
 
-## More on plugins
+## Page Type
 
-Ok, now we know how to create and register a plugin we can dive deeper into what makes up a plugin.
-
-### pageType
-
-The pageType object is where we can define our available whppt pages. For example, we could make a `generic` pageType,
+The `pageType` object is where we can define our available whppt pages. For example, we could make a `generic` pageType,
 which might look like this:
 
 ```js 
@@ -88,9 +80,9 @@ export default {
 
 The example above, once the plugin has been registered with whppt, will populate the `new page` menu with `generic` as a selectable page type.
 
-- TODO: needs more information on pageType, e.g. templates and components
+[comment]: <> (TODO: needs more information on pageType, e.g. templates and components)
 
-### pageSettings
+## Page Settings
 
 - [api](/api/plugins/pageSettings)
 
@@ -103,9 +95,9 @@ Registering a tab within page settings can be useful when you want custom contro
 The page settings dialog in WhpptJS will register multiple tabs out of the box for you. the default tabs include
 General, SEO, Open Graph, Twitter and Roles. You can read more about these tabs in the [User Guide]().
 
-### siteSettings
+## Site Settings
 
-- [api](api/plugins/siteSettings)
+- [api](/api/plugins/siteSettings)
 
 The `siteSettings` key is similar to `pageSettings` except that its concern will be at a site level rather than a single 
 page. For example if we wanted to allow the content manager of the site the ability to change a banner message on the site 
@@ -114,9 +106,9 @@ that appears across all pages, we could use a `siteSettings` object to register 
 The site settings dialog in WhpptJS will register multiple tabs out of the box for you. The default tabs include General,
  Open Graph, Twitter, SEO, Redirects, Files and Roles. You can read more about these tabs in the [User Guide]().
 
-### dashboard
+## Dashboards
 
-- [api](api/plugins/dashboard)
+- [api](/api/plugins/dashboard)
 
 The `dashboard` key is another way of registering a component into WhpptJS. Dashboard can expose a similar concept to the
 `siteSettings` key, but the dashboard tabs should have a focus on visualising data e.g. tables or graphs. There's no 
@@ -125,29 +117,48 @@ reason you can't put whatever you need within a dashboard tab.
 The dashboard dialog in WhpptJS will register multiple tabs out of the box for you. The default tabs include General and 
 Users. 
 
-### editors
+## Editors
 
-- [api](api/plugins/editors)
+- [api](/api/plugins/editors)
 
 `editors` are a handy way to create custom directives and components that expose your own way to edit content within the
 WhpptJS sidebar. Each editor can provide a custom directive but, if a directive isn't provided, the editor will register
 one for you. 
 
-### lifecycle hooks
+## Lifecycle Hooks
 
+- [api](/api/plugins/lifecycleHooks)
 
-
-- beforePublish
-- afterPublish
-- beforeUnpublish
-- afterUnpublish
+WhpptJS plugins have multiple life cycle hooks. These are functions that will be ran either before or after certain pre-existing
+actions like publishing a page. This can be handy to perform certain tasks like indexing a document into a search platform such
+as Algolia.
 
 ## Templates
 
-- vue templates
-- key
-- label
-- init hooks and why
+- [api](/api/plugins/templates)
+
+Templates are a way to create default layouts for pages. In Whppt, page types can have multiple associated templates. 
+These templates provide a Vue component and can initialise data to be observable so that we can update page data in 
+whppt and directly see the changes as they're made.
+
+Below is an example of what a template might look like on a Whppt plugin.
+
+```js
+const templates = [
+  {
+    key: 'myTemplate',
+    label: 'My Template',
+    init({ $set }, page) {
+      if (!page.contentItems) $set(page, 'contentItems', []);
+      
+      return page;
+    }
+  }
+]
+```
+
+Let's break down the above code. First up, the templates variable will need to be assigned to its corresponding `pageType`, 
+e.g. `pageType.templates = templates`.
 
 ## Components
 

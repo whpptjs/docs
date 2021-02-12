@@ -5,13 +5,33 @@
 Creating a new Whppt App can be a bit of work, so to help you get started we've created a tool to quickly
 spin up a new Whppt app.
 
-```shell
-npx create-whppt-app <project-name>
-```
-or 
+<code-group>
+
+<code-block title="Yarn">
+
 ```shell
 yarn create whppt-app <project-name>
 ```
+
+</code-block>
+
+<code-block title="npx">
+
+```shell
+npx create-whppt-app <project-name>
+```
+
+</code-block>
+
+<code-block title="npm">
+
+```shell 
+npm init nuxt-app <project-name>
+```
+
+</code-block>
+
+</code-group>
 
 Where `<project-name>` is the name of the directory that will be created.
 
@@ -62,13 +82,25 @@ Don't forget to replace `<project-name>` with the name of your project.
 
 Now that your `package.json` is set up we can install Nuxt and WhpptJS with whichever package manager you chose, to the project.
 
+<code-group>
+
+<code-block title="Yarn">
+
 ```shell
-Yarn add nuxt @whppt/nuxt @whppt/api-express
+yarn add nuxt @whppt/nuxt @whppt/api-express
 ```
-or
+
+</code-block>
+
+<code-block title="npm">
+
 ```shell
 npm install nuxt @whppt/nuxt @whppt/api-express
 ```
+
+</code-block>
+
+</code-group>
 
 The above will add 3 dependencies to your `package.json`. All 3 packages are required to successfully build a WhpptJS app.
 
