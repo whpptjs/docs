@@ -146,7 +146,7 @@ Below is an example of what a template might look like on a Whppt plugin.
 ```js
 const templates = [
   {
-    key: 'myTemplate',
+    key: 'MyTemplate',
     label: 'My Template',
     init({ $set }, page) {
       if (!page.contentItems) $set(page, 'contentItems', []);
@@ -166,4 +166,5 @@ e.g. `pageType.templates = templates`.
 - name
 - componentType
 - init hook
+- previewInit hook
 - still need to import components vue file into the template or register globally

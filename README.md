@@ -18,4 +18,5 @@ There are a few official WhpptJS modules, below is a list with links to their do
 
 ___
 
-![Powered By Vercel](./assets/powered-by-vercel.svg)
+
+[![Powered By Vercel](./assets/powered-by-vercel.svg)](https://vercel.com/?utm_source=whppt&utm_campaign=oss)
