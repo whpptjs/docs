@@ -1,4 +1,4 @@
-# Whppt Plugins
+# Plugins
 
 One of the core concepts of WhpptJS is the ability to create plugins.
 
@@ -160,11 +160,56 @@ const templates = [
 Let's break down the above code. First up, the templates variable will need to be assigned to its corresponding `pageType`, 
 e.g. `pageType.templates = templates`.
 
+Next lets look at the `key` attribute. The `key` attribute is how we tell our page which template to use. For example, if we 
+made a template like above with the key "MyTemplate" then over on our `_.vue` page we can import our template Vue
+component and using the Vue `<component :is="" />` directive we can use the selected template.
+
+For more on using templates inside pages, see [Pages](/guide/gettingStarted/pages).
+
 ## Components
 
-- key
-- name
-- componentType
-- init hook
-- previewInit hook
-- still need to import components vue file into the template or register globally
+- [api](/api/plugins/components)
+
+Components or `pageType.components` within a plugin are a way to define which components will be available within `pageTypes`.
+Below is an example of what the components can look like.
+
+```js
+const pageType = { /* rest of the pageType object goes here */ }
+
+pagetype.components = {
+  key: 'MyComponent',
+  label: 'My Component',
+  componentType: 'People',
+  init({ $set }, content) {
+    return content
+  },
+  previewInit({ $set }, content) {
+    return content
+  }
+}
+```
+
+Let's break down the above. The `componentType` attribute is what will be used internally with the 
+<router-link to="/guide/gettingStarted/components.html#content">Whppt Content Component</router-link>. 
+
+[comment]: <> (TODO: Solve components imports and document how here)
+
+- componentType, if still necessary
+  
+Components have 2 hooks that can be registered here. The most important one is the `init` hooks as seen about. We can
+provide an init function to the component. This hook is used to create default data per components, this is necessary to
+create observable data. In the case that we need to create nested data that needs to remain dynamic we can ensure the 
+data is registered here. 
+
+Below is an example of what the init hook might contain.
+
+```js
+init({ $set }, content = {}) {
+  if(!content.header) $set(content, 'header', { title: '' }) // $set uses the Vue.set() method under the hood.
+  
+  return content; // ensure we return our data
+}
+```
+
+The `previewInit` hook works the same as the `init` hook, however this hook will only be used when viewing the preview
+of components. This allows you to set up better examples for each component.

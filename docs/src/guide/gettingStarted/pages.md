@@ -56,3 +56,5 @@ up to you as to which one use when loading your page.
 
 With the above, there's one thing missing, we're trying to load something that does not yet exist. In the next section we'll look 
 at getting our first [Whppt plugin](/guide/gettingStarted/plugins) setup and how we can create a page so that the above setup will work.
+
+[comment]: <> (TODO: Explain Templates and component is directve usage)
