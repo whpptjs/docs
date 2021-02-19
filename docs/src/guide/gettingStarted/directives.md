@@ -1,253 +1,37 @@
 # Directives
 
-Little bit of info here about directives, why, what, how etc.
+Directives are a core concept of whppt. These directives and their implementation are what makes Whppt so dynamic 
+and editable in real time.
 
-## v-whppt-text
+In this section of the guide, we'll look at what the directives do, the directives that Whppt provides and how you
+can easily implement your own via Whppt plugins.
 
-```vue
-<template>
-  <div>
-    <div v-whppt-text="content" data-property="myProperty">{{ myText }}</div>
-  </div>
-</template>
+## What are whppt directives?
 
-<script>
-export default {
-  name: "MyComponent",
-  data: () => ({
-    myText: "",
-    content: {
-      myProperty: "",
-    },
-  }),
-};
-</script>
-```
+Whppt directives are simply just a way we've utilised Vue directives to allow components and data to be selected.
+We can simply have a Vue component, apply a directive to it, pass the data belonging to the component to the directive
+and trigger the Whppt or your custom editors.
 
-## v-whppt-default
+## Whppt provided directives
 
-```vue
-<template>
-  <div v-whppt-default="myComponentData">
-    This is an example for the v-whppt-default directive.
-  </div>
-</template>
+Out of the box, Whppt registers multiple directives ready to be used. Below is a list of Whppt directives 
+that will be available to use. To find out more about each directive, follow the link through to see their API and 
+any examples of usage.
 
-<script>
-export default {
-  name: "MyComponent",
-  data: () => ({
-    myComponentData: {},
-  }),
-};
-</script>
-```
+- [Whppt Text](/api/directives/text)
+- [Whppt Anchor](/api/directives/anchor)
+- [Whppt List](/api/directives/list)
+- [Whppt Link](/api/directives/link)
+- [Whppt Date](/api/directives/date)
+- [Whppt Content](/api/directives/content)
+- [Whppt Rich Text](/api/directives/richText)
+- [Whppt Formatted Text](/api/directives/formattedText)
+- [Whppt Image](/api/directives/image)
 
-## v-whppt-anchor
+## Custom directives
 
-```vue
-<template>
-  <div>
-    <a :href="`#${myComponentData.anchor}`">Go to anchor</a>
-    <!-- ... -->
-    <div v-whppt-anchor="myComponentData" data-property="anchor">
-      <span :id="myComponentData.anchor">{{ content.anchor }}</span>
-    </div>
-  </div>
-</template>
+In Whppt there are 2 types of custom directives, one is an auto generated for you when you provide `editors`
+to a plugin (<router-link to="/guide/gettingStarted/plugins.html#editors">see editors</router-link>) while the other
+can be completely custom.
 
-<script>
-export default {
-  name: "MyComponent",
-  data: () => ({
-    myComponentData: {
-      anchor: "",
-    },
-  }),
-};
-</script>
-```
 
-## v-whppt-list
-
-```vue
-<template>
-  <div
-    v-whppt-list="{ data: myComponentData, addNew: pushNewToListItems }"
-    data-property="listItems"
-  >
-    <div v-for="(listItem, index) in myComponentData.listItems" :key="index">
-      {{ listItem.text }}
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "MyComponent",
-  data: () => ({
-    myComponentData: {
-      listItems: [],
-    },
-  }),
-  methods: {
-    pushNewToListItems() {
-      this.myComponentData.listItems.push({ text: "New List Item" });
-    },
-  },
-};
-</script>
-```
-
-## v-whppt-link
-
-```vue
-<template>
-  <div v-whppt-link="myComponentData.link">
-    <whppt-link :to="myComponentData.link">{{ content.link.text }}</whppt-link>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "WhpptLinkDirectiveExample",
-  data: () => ({
-    myComponentData: {
-      link: { text: "About", href: "/about", type: "page" },
-    },
-  }),
-};
-</script>
-```
-
-## v-whppt-date
-
-```vue
-<template>
-  <div v-whppt-date="myComponentData" data-property="date">
-    <div>{{ myComponentData.date }}</div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "WhpptDateDirectiveExample",
-  data: () => ({
-    myComponentData: {
-      date: "",
-    },
-  }),
-};
-</script>
-```
-
-## v-whppt-content
-
-```vue
-<template>
-  <div v-whppt-content="myComponentData.content" data-whitelist="Anchor">
-    <div v-for="(content, index) in myComponentData.content" :key="index">
-      <component :is="content.displayType" :content="content"></component>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "WhpptDateDirectiveExample",
-  data: () => ({
-    myComponentData: {
-      content: [],
-    },
-  }),
-};
-</script>
-```
-
-## v-whppt-rich-text
-
-```vue
-<template>
-  <div
-    v-whppt-formatted-text="myComponentData"
-    data-property="richText"
-    data-hide-menu
-    data-hide-style
-    data-hide-headers
-    data-hide-lists
-    data-hide-links
-    class="w-full h-40 bg-purple-500"
-  >
-    <div v-html="myComponentData.richText" />
-  </div>
-</template>
-
-<script>
-export default {
-  name: "WhpptRichTextDirectiveExample",
-  data: () => ({
-    myComponentData: {
-      richText: "",
-    },
-  }),
-};
-</script>
-```
-
-## v-whppt-formatted-text
-
-```vue
-<template>
-  <div v-whppt-formatted-text="myComponentData" data-property="formattedText">
-    <div class="richText" v-html="myComponentData.formattedText" />
-  </div>
-</template>
-
-<script>
-export default {
-  name: "WhpptFormattedTextDirectiveExample",
-  data: () => ({
-    myComponentData: {
-      formattedText: "",
-    },
-  }),
-};
-</script>
-```
-
-## v-whppt-image
-
-```vue
-<template>
-  <div
-    v-whppt-image="myComponentData"
-    data-sizes='{ "desktop": { "width": 300, "height": 300, "quality": 1, "aspectRatio": 1 } }'
-  >
-    <img
-      :src="
-        $whppt.getImage(
-          myComponentData.image.imageId,
-          300,
-          300,
-          myComponentData.image.desktop
-        )
-      "
-      :alt="myComponentData.image.alt"
-    />
-  </div>
-</template>
-
-<script>
-export default {
-  name: "WhpptImageDirectiveExample",
-  data: () => ({
-    myComponentData: {
-      image: {
-        imageId: "",
-        alt: "",
-      },
-    },
-  }),
-};
-</script>
-```

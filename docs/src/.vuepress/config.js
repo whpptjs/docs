@@ -56,7 +56,6 @@ module.exports = {
           children: [
             {
               title: "Getting started",
-              collapsable: false,
               sidebarDepth: 1,
               children: [
                 "gettingStarted/prerequisites",
@@ -72,7 +71,6 @@ module.exports = {
             },
             {
               title: "Deployment",
-              collapsable: false,
               sidebarDepth: 1,
               children: ["deployment/environment"],
             },
@@ -86,8 +84,8 @@ module.exports = {
           collapsable: false,
           children: [
             "config", "users/cli", "domains", {
-              title: 'Plugins', collapsable: false, sidebarDepth: 1, children: [
-                // "plugins/pageType",
+              title: 'Plugins', sidebarDepth: 1, children: [
+                "plugins/pageType",
                 "plugins/pageSettings",
                 "plugins/siteSettings",
                 "plugins/dashboard",
@@ -96,6 +94,19 @@ module.exports = {
                 "plugins/templates",
               ]
             },
+            {
+              title: 'Directives', collapsable: true, sidebarDepth: 1, children: [
+                "directives/text",
+                "directives/anchor",
+                "directives/list",
+                "directives/link",
+                "directives/date",
+                "directives/content",
+                "directives/richText",
+                "directives/formattedText",
+                "directives/image",
+              ]
+            }
           ],
         },
       ],
