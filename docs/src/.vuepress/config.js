@@ -60,7 +60,7 @@ module.exports = {
               children: [
                 "gettingStarted/prerequisites",
                 "gettingStarted/installation",
-                "gettingStarted/structure",
+                // "gettingStarted/structure",
                 "gettingStarted/pages",
                 "gettingStarted/plugins",
                 "gettingStarted/directives",
@@ -69,11 +69,11 @@ module.exports = {
                 "gettingStarted/authentication",
               ],
             },
-            {
-              title: "Deployment",
-              sidebarDepth: 1,
-              children: ["deployment/environment"],
-            },
+            // {
+            //   title: "Deployment",
+            //   sidebarDepth: 1,
+            //   children: ["deployment/environment"],
+            // },
           ],
         },
       ],
@@ -105,6 +105,18 @@ module.exports = {
                 "directives/richText",
                 "directives/formattedText",
                 "directives/image",
+                "directives/custom",
+              ]
+            },
+            {
+              title: 'Components', collapsable: true, sidebarDepth: 1, children: [
+                "components/EditorApp",
+                "components/Content",
+                "components/WhpptLink",
+                "components/PlainText",
+                "components/RichText",
+                "components/FormattedText",
+                "components/Anchor",
               ]
             }
           ],

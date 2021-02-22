@@ -20,18 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ed72003-31c6-4e8d-a838-1b3cd2246245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/anchor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/content.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/date.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/formattedText.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/image.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/link.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/list.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/richText.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/text.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/Anchor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/Content.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/EditorApp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/FormattedText.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/PlainText.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/RichText.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/components/WhpptLink.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/src/api/directives/custom.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/authentication.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/authentication.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/components.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/components.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/directives.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/directives.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/src/guide/gettingStarted/store.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/src/guide/gettingStarted/store.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/src/api/directives" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/src/api/components" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -74,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/src/api/components" />
       <recent name="$PROJECT_DIR$/docs/src/api/directives" />
       <recent name="$PROJECT_DIR$/docs/src/api/plugins" />
       <recent name="$PROJECT_DIR$/assets" />
@@ -163,7 +167,8 @@
       <workItem from="1613614243970" duration="9467000" />
       <workItem from="1613693528968" duration="1881000" />
       <workItem from="1613696041613" duration="2933000" />
-      <workItem from="1613708092827" duration="5135000" />
+      <workItem from="1613708092827" duration="5641000" />
+      <workItem from="1613946102265" duration="19946000" />
     </task>
     <servers />
   </component>

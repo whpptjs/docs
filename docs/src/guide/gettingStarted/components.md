@@ -1,67 +1,23 @@
 # Components
 
+This section of the documentation should not be confused with <RouterLink to="/guide/gettingStarted/plugins.html#components">plugin components</RouterLink>. The following outlines the build in
+components available Whppt.
+
 When you register `@whppt/nuxt` with a nuxt app, a series of components will be registered globally within your Vue 
-app. These components are either a necessity, e.g. the [Editor App](#editor-app), which is required to show any of the
+app. These components are either a necessity, e.g. the [Editor App](/api/components/EditorApp), which is required to show any of the
 editor menus/components. While others are included to get you up and running faster with editable content.
 
-## Editor App
+Below is a list of all the components available out of the box with Whppt. Click through to check out more about each
+component.
 
-The Editor App component should wrap the primary view of your app. For example, in nuxt, it will wrap the `<nuxt />` 
-component. If you generated your project using the CLI tool, `create-whppt-app`, then this will already be done for you.
+- [Editor App](/api/components/EditorApp)
+- [Content](/api/components/Content)
+- [Whppt Link](/api/components/WhpptLink)
+- [Plain Text](/api/components/PlainText)
+- [Rich Text](/api/components/RichText)
+- [Formatted Text](/api/components/FormattedText)
+- [Anchor](/api/components/Anchor)
 
-### Example
-```vue
-<template>
-  <div>
-    <w-editor-app>
-      <nuxt />
-    </w-editor-app>
-  </div>
-</template>
 
-<script>
-  export default {
-    name: 'DefaultLayout'
-  }
-</script>
-```
-
-### Props
- 
-- List of props and their descriptions go here
-
-### Classes / Styling
-
-- List of available classes here.
-
-## Content 
-`<w-content></w-content>`
-
-Properties: `contentItems<Array>`
-
-## Whppt Link
-`<whppt-link></whppt-link>`
-
-Properties: `to<Object>`
-
-## Plain Text 
-`<w-plain-text></w-plain-text>`
-
-Properties: `content<Object>`, `property<String>`
-
-## Rich Text 
-`<w-rich-text></w-rich-text>`
-
-Properties: `content<Object>`, `property<String>`
-
-## Formatted Text
-`<w-formatted-text></w-formatted-text>`
-
-Properties: `content<Object>`, `property<String>`
-
-## Anchor
-`<w-anchor></w-anchor>`
-
-Properties: `content<Object>`, `property<String>`
 
 

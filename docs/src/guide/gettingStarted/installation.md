@@ -82,25 +82,25 @@ Don't forget to replace `<project-name>` with the name of your project.
 
 Now that your `package.json` is set up we can install Nuxt and WhpptJS with whichever package manager you chose, to the project.
 
-<code-group>
+<CodeGroup>
 
-<code-block title="Yarn">
+<CodeBlock title="Yarn">
 
 ```shell
 yarn add nuxt @whppt/nuxt @whppt/api-express
 ```
 
-</code-block>
+</CodeBlock>
 
-<code-block title="npm">
+<CodeBlock title="npm">
 
 ```shell
 npm install nuxt @whppt/nuxt @whppt/api-express
 ```
 
-</code-block>
+</CodeBlock>
 
-</code-group>
+</CodeGroup>
 
 The above will add 3 dependencies to your `package.json`. All 3 packages are required to successfully build a WhpptJS app.
 
@@ -114,5 +114,5 @@ The above will add 3 dependencies to your `package.json`. All 3 packages are req
 
 ## Next steps
 
-- [Create a user](/api/users/cli.md#creating-a-user)
+- <RouterLink to="/api/users/cli.html#creating-a-user">Create a user</RouterLink>
 

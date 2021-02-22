@@ -31,7 +31,21 @@ any examples of usage.
 ## Custom directives
 
 In Whppt there are 2 types of custom directives, one is an auto generated for you when you provide `editors`
-to a plugin (<router-link to="/guide/gettingStarted/plugins.html#editors">see editors</router-link>) while the other
-can be completely custom.
+to a plugin (<RouterLink to="/guide/gettingStarted/plugins.html#editors">see editors</RouterLink>) while the other
+can be completely custom. 
+
+Below is an example of supplying a custom directive to an editor:
+
+```js
+import Vue from 'vue';
+
+export default ({ store, app: { $whppt } }, menuIsInState, MENUSTATES, definition) => {
+  Vue.directive(definition.name, {});
+};
+```
+
+To learn more about custom directives in whppt see the API documentation [here](/api/directives/custom).
+
+
 
 
