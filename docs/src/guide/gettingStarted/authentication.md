@@ -58,4 +58,4 @@ Another feature of the authorisation that comes with Whppt out of the box is the
 password. However, this will really only work with SMTP details provided and configured correctly as it requires an email
 to be sent to the user requesting their password reset. 
 
-Once configured, a user can visit the Reset password portion of the login form and submit to reset their password.
+Once configured, a user can visit the Reset password portion of the login form and submit to reset the«ir password.
