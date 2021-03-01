@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "@vuepress/plugin-register-components": "^1.8.1"
+    "@vuepress/plugin-register-components": "^1.8.1",
+    "vuepress-plugin-container": "^2.1.5"
   }
 }

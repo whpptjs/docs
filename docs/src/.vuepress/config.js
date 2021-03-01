@@ -1,4 +1,4 @@
-const {description} = require("../../package");
+const { description } = require("../../package");
 
 module.exports = {
   /**
@@ -16,11 +16,11 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ["meta", {name: "theme-color", content: "#3eaf7c"}],
-    ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
       "meta",
-      {name: "apple-mobile-web-app-status-bar-style", content: "black"},
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
   /**
@@ -29,11 +29,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "",
-    editLinks: false,
-    docsDir: "",
-    editLinkText: "",
-    lastUpdated: false,
+    docsRepo: "whpptjs/docs",
+    docsDir: "docs",
+    docsBranch: "main",
+    editLinks: true,
+    editLinkText: "Help us improve this page!",
+    lastUpdated: true,
     nav: [
       {
         text: "Guide",
@@ -47,6 +48,19 @@ module.exports = {
       //   text: "Versions",
       //   items: [{ text: "Version 2", link: "https://v2.whppt.org" }],
       // },
+      {
+        text: "Github",
+        items: [
+          {
+            text: "Whppt / Nuxt",
+            link: "https://github.com/whpptjs/whppt-nuxt",
+          },
+          {
+            text: "Whppt / Api Express",
+            link: "https://github.com/whpptjs/whppt-api-express",
+          },
+        ],
+      },
     ],
     sidebar: {
       "/guide/": [
@@ -60,6 +74,7 @@ module.exports = {
               children: [
                 "gettingStarted/prerequisites",
                 "gettingStarted/installation",
+                "gettingStarted/domains",
                 // "gettingStarted/structure",
                 "gettingStarted/pages",
                 "gettingStarted/plugins",
@@ -83,8 +98,13 @@ module.exports = {
           path: "/api/",
           collapsable: false,
           children: [
-            "config", "users/cli", "domains", {
-              title: 'Plugins', sidebarDepth: 1, children: [
+            "config",
+            "users/cli",
+            "domains",
+            {
+              title: "Plugins",
+              sidebarDepth: 1,
+              children: [
                 "plugins/pageType",
                 "plugins/pageSettings",
                 "plugins/siteSettings",
@@ -92,10 +112,13 @@ module.exports = {
                 "plugins/editors",
                 "plugins/lifecycleHooks",
                 "plugins/templates",
-              ]
+              ],
             },
             {
-              title: 'Directives', collapsable: true, sidebarDepth: 1, children: [
+              title: "Directives",
+              collapsable: true,
+              sidebarDepth: 1,
+              children: [
                 "directives/text",
                 "directives/anchor",
                 "directives/list",
@@ -106,10 +129,13 @@ module.exports = {
                 "directives/formattedText",
                 "directives/image",
                 "directives/custom",
-              ]
+              ],
             },
             {
-              title: 'Components', collapsable: true, sidebarDepth: 1, children: [
+              title: "Components",
+              collapsable: true,
+              sidebarDepth: 1,
+              children: [
                 "components/EditorApp",
                 "components/Content",
                 "components/WhpptLink",
@@ -117,8 +143,8 @@ module.exports = {
                 "components/RichText",
                 "components/FormattedText",
                 "components/Anchor",
-              ]
-            }
+              ],
+            },
           ],
         },
       ],
@@ -127,5 +153,17 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom", "vuepress-plugin-smooth-scroll", '@vuepress/register-components'],
+  plugins: [
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
+    "@vuepress/register-components",
+    "vuepress-plugin-smooth-scroll",
+    [
+      "vuepress-plugin-container",
+      {
+        type: "tip",
+        defaultTitle: "Tip",
+      },
+    ],
+  ],
 };

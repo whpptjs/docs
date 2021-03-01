@@ -5,7 +5,7 @@
 Creating a new Whppt App can be a bit of work, so to help you get started we've created a tool to quickly
 spin up a new Whppt app.
 
-<code-group>
+<CodeGroup>
 
 <code-block title="Yarn">
 
@@ -25,23 +25,26 @@ npx create-whppt-app <project-name>
 
 <code-block title="npm">
 
-```shell 
-npm init nuxt-app <project-name>
+```shell
+npm init whppt-app <project-name>
 ```
 
 </code-block>
 
-</code-group>
+</CodeGroup>
 
 Where `<project-name>` is the name of the directory that will be created.
 
 Once run, you will be prompted for a few things, very similar to the prompts found when creating a
-new NuxtJS app.
+new Nuxt app.
 
 - TODO: explain some of the options
 - TODO: check if we can run cmds for create user and add a domain / See creating a user in api
 
-At this point you can see the 404 page at the --url--
+When, the new project has been created there are a few things we need to make sure are set up before we continue,
+First up, if you look in the root directory of the new project you will find a `.env` file. Nuxt doesn't usually
+come with a `.env` file out of the box but Whppt does. Inside the `.env` file there will be multiple keys value pairs
+set where the value is empty. We're going to need to configure some of there before we can move on.
 
 ## Manual Installation
 
@@ -75,7 +78,9 @@ touch package.json
 ```
 
 ::: tip
-Don't forget to replace `<project-name>` with the name of your project.
+
+Don't forget to replace `project-name` with the name of your project.
+
 :::
 
 ### Install Nuxt and WhpptJS
@@ -110,9 +115,7 @@ The above will add 3 dependencies to your `package.json`. All 3 packages are req
 - express setup
 - make sure you have a store
 
-
-
 ## Next steps
 
+- [Creating a domain](/guide/gettingStarted/domains)
 - <RouterLink to="/api/users/cli.html#creating-a-user">Create a user</RouterLink>
-

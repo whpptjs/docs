@@ -14,8 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "vuepress-plugin-smooth-scroll": "^0.0.10",
-    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+    "vuepress-plugin-smooth-scroll": "^0.0.10"
   },
   "devDependencies": {
     "vuepress": "^1.5.3"
