@@ -118,4 +118,4 @@ The above will add 3 dependencies to your `package.json`. All 3 packages are req
 ## Next steps
 
 - [Creating a domain](/guide/gettingStarted/domains)
-- <RouterLink to="/api/users/cli.html#creating-a-user">Create a user</RouterLink>
+- [Creating a user](/guide/gettingStarted/authentication)

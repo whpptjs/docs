@@ -1,10 +1,10 @@
-
 # Editor App
 
 The Editor App component should wrap the primary view of your app. For example, in nuxt, it will wrap the `<nuxt />`
 component. If you generated your project using the CLI tool, `create-whppt-app`, then this will already be done for you.
 
 ## Example
+
 ```vue
 <template>
   <div>
@@ -15,9 +15,9 @@ component. If you generated your project using the CLI tool, `create-whppt-app`,
 </template>
 
 <script>
-  export default {
-    name: 'DefaultLayout'
-  }
+export default {
+  name: "DefaultLayout",
+};
 </script>
 ```
 
