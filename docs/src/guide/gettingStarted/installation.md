@@ -117,5 +117,5 @@ The above will add 3 dependencies to your `package.json`. All 3 packages are req
 
 ## Next steps
 
-- [Creating a domain](/guide/gettingStarted/domains)
 - [Creating a user](/guide/gettingStarted/authentication)
+- [Creating a domain](/guide/gettingStarted/domains)

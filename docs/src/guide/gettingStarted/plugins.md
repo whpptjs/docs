@@ -10,39 +10,39 @@ the concepts that you require e.g. If your plugin doesn't need to register a sit
 
 ```js
 // ~/myWhpptPlugin.js
-import MyPageSettingComponent from './MyPageSettingComponent';
-import MySiteSettingComponent from './MySiteSettingComponent';
-import MyDashboardComponent from './MyDashboardComponent';
-import MyEditorComponent from './MyEditorComponent';
+import MyPageSettingComponent from "./MyPageSettingComponent";
+import MySiteSettingComponent from "./MySiteSettingComponent";
+import MyDashboardComponent from "./MyDashboardComponent";
+import MyEditorComponent from "./MyEditorComponent";
 
 export default {
   name: "Generic",
   pageSettings: {
-    name: '',
-    label: '',
-    component: MyPageSettingComponent
+    name: "",
+    label: "",
+    component: MyPageSettingComponent,
   },
   siteSettings: {
-    name: '',
-    label: '',
-    component: MySiteSettingComponent
+    name: "",
+    label: "",
+    component: MySiteSettingComponent,
   },
   dashboard: {
-    name: '',
-    label: '',
-    component: MyDashboardComponent
+    name: "",
+    label: "",
+    component: MyDashboardComponent,
   },
   pageType: {
     name: "",
     label: "",
-    collection: {name: ""},
+    collection: { name: "" },
     templates: [],
     components: [],
   },
   editors: [
     {
-      name: '',
-      label: '',
+      name: "",
+      label: "",
       component: MyEditorComponent,
     },
   ],
@@ -51,12 +51,12 @@ export default {
 
 ### Registering the plugin with Whppt
 
-To register our plugin with whppt we can create a [nuxt plugin](https://nuxtjs.org/docs/2.x/directory-structure/plugins/). 
+To register our plugin with whppt we can create a [nuxt plugin](https://nuxtjs.org/docs/2.x/directory-structure/plugins/).
 Below is an example of how we can register our whppt plugins.
 
 ```js
 // ~/plugins/whpptPlugins.js
-import myWhpptPlugin from './myWhpptPlugin';
+import myWhpptPlugin from "./myWhpptPlugin";
 
 export default ({ app }) => {
   app.$whppt.addPlugin(myWhpptPlugin);
@@ -68,14 +68,14 @@ export default ({ app }) => {
 The `pageType` object is where we can define our available whppt pages. For example, we could make a `generic` pageType,
 which might look like this:
 
-```js 
+```js
 export default {
-  name: 'generic',
-  label: 'Generic',
-  collection: {name: 'pages', /* other collection options */},
+  name: "generic",
+  label: "Generic",
+  collection: { name: "pages" /* other collection options */ },
   templates: [],
-  componentes: [],
-}
+  components: [],
+};
 ```
 
 The example above, once the plugin has been registered with whppt, will populate the `new page` menu with `generic` as a selectable page type.
@@ -99,23 +99,23 @@ General, SEO, Open Graph, Twitter and Roles. You can read more about these tabs 
 
 - [api](/api/plugins/siteSettings)
 
-The `siteSettings` key is similar to `pageSettings` except that its concern will be at a site level rather than a single 
-page. For example if we wanted to allow the content manager of the site the ability to change a banner message on the site 
+The `siteSettings` key is similar to `pageSettings` except that its concern will be at a site level rather than a single
+page. For example if we wanted to allow the content manager of the site the ability to change a banner message on the site
 that appears across all pages, we could use a `siteSettings` object to register a tab within the site settings menu.
 
 The site settings dialog in WhpptJS will register multiple tabs out of the box for you. The default tabs include General,
- Open Graph, Twitter, SEO, Redirects, Files and Roles. You can read more about these tabs in the [User Guide]().
+Open Graph, Twitter, SEO, Redirects, Files and Roles. You can read more about these tabs in the [User Guide]().
 
 ## Dashboards
 
 - [api](/api/plugins/dashboard)
 
 The `dashboard` key is another way of registering a component into WhpptJS. Dashboard can expose a similar concept to the
-`siteSettings` key, but the dashboard tabs should have a focus on visualising data e.g. tables or graphs. There's no 
-reason you can't put whatever you need within a dashboard tab. 
+`siteSettings` key, but the dashboard tabs should have a focus on visualising data e.g. tables or graphs. There's no
+reason you can't put whatever you need within a dashboard tab.
 
-The dashboard dialog in WhpptJS will register multiple tabs out of the box for you. The default tabs include General and 
-Users. 
+The dashboard dialog in WhpptJS will register multiple tabs out of the box for you. The default tabs include General and
+Users.
 
 ## Editors
 
@@ -123,7 +123,7 @@ Users.
 
 `editors` are a handy way to create custom directives and components that expose your own way to edit content within the
 WhpptJS sidebar. Each editor can provide a custom directive but, if a directive isn't provided, the editor will register
-one for you. 
+one for you.
 
 ## Lifecycle Hooks
 
@@ -137,8 +137,8 @@ as Algolia.
 
 - [api](/api/plugins/templates)
 
-Templates are a way to create default layouts for pages. In Whppt, page types can have multiple associated templates. 
-These templates provide a Vue component and can initialise data to be observable so that we can update page data in 
+Templates are a way to create default layouts for pages. In Whppt, page types can have multiple associated templates.
+These templates provide a Vue component and can initialise data to be observable so that we can update page data in
 whppt and directly see the changes as they're made.
 
 Below is an example of what a template might look like on a Whppt plugin.
@@ -146,21 +146,21 @@ Below is an example of what a template might look like on a Whppt plugin.
 ```js
 const templates = [
   {
-    key: 'MyTemplate',
-    label: 'My Template',
+    key: "MyTemplate",
+    label: "My Template",
     init({ $set }, page) {
-      if (!page.contentItems) $set(page, 'contentItems', []);
-      
+      if (!page.contentItems) $set(page, "contentItems", []);
+
       return page;
-    }
-  }
-]
+    },
+  },
+];
 ```
 
-Let's break down the above code. First up, the templates variable will need to be assigned to its corresponding `pageType`, 
+Let's break down the above code. First up, the templates variable will need to be assigned to its corresponding `pageType`,
 e.g. `pageType.templates = templates`.
 
-Next lets look at the `key` attribute. The `key` attribute is how we tell our page which template to use. For example, if we 
+Next lets look at the `key` attribute. The `key` attribute is how we tell our page which template to use. For example, if we
 made a template like above with the key "MyTemplate" then over on our `_.vue` page we can import our template Vue
 component and using the Vue `<component :is="" />` directive we can use the selected template.
 
@@ -174,39 +174,41 @@ Components or `pageType.components` within a plugin are a way to define which co
 Below is an example of what the components can look like.
 
 ```js
-const pageType = { /* rest of the pageType object goes here */ }
+const pageType = {
+  /* rest of the pageType object goes here */
+};
 
 pagetype.components = {
-  key: 'MyComponent',
-  label: 'My Component',
-  componentType: 'People',
+  key: "MyComponent",
+  label: "My Component",
+  componentType: "People",
   init({ $set }, content) {
-    return content
+    return content;
   },
   previewInit({ $set }, content) {
-    return content
-  }
-}
+    return content;
+  },
+};
 ```
 
-Let's break down the above. The `componentType` attribute is what will be used internally with the 
-<router-link to="/guide/gettingStarted/components.html#content">Whppt Content Component</router-link>. 
+Let's break down the above. The `componentType` attribute is what will be used internally with the
+<router-link to="/guide/gettingStarted/components.html#content">Whppt Content Component</router-link>.
 
 [comment]: <> (TODO: Solve components imports and document how here)
 
 - componentType, if still necessary
-  
+
 Components have 2 hooks that can be registered here. The most important one is the `init` hooks as seen about. We can
 provide an init function to the component. This hook is used to create default data per components, this is necessary to
-create observable data. In the case that we need to create nested data that needs to remain dynamic we can ensure the 
-data is registered here. 
+create observable data. In the case that we need to create nested data that needs to remain dynamic we can ensure the
+data is registered here.
 
 Below is an example of what the init hook might contain.
 
 ```js
 init({ $set }, content = {}) {
   if(!content.header) $set(content, 'header', { title: '' }) // $set uses the Vue.set() method under the hood.
-  
+
   return content; // ensure we return our data
 }
 ```

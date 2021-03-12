@@ -7,7 +7,7 @@ roles system and a few other bits and pieces to make getting your website up and
 
 When `whppt/api-express` is installed, it will also register a bin script called `gen-root-user`. This script is a CLI 
 tool that allows you to generate a root user for use with Whppt. A root user is required to get started with Whppt as
-authorisation is required to access most of the tools Whppt has to offer.
+authentication is required to access most of the tools Whppt has to offer.
 
 an easy way to register and use the `gen-root-user` script is to create a npm script that runs the bin script.
 
@@ -38,14 +38,14 @@ user more access we can create and assign roles to the new users.
 ## Roles
 
 Roles are baked into Whppt to accompany the authentication system provided. To make roles, using the root user or a 
-user with an admin role, we can visit the site settings dialog and move over to the roles tab. Here we can create 
+user with an admin role, we can visit the site settings dialogue and move over to the roles tab. Here we can create 
 and manage roles. Selecting the `Is Admin Role` option on creation will mark the role as admin.
 
 To apply roles, there are multiple options as to where we want to apply the roles. It's likely that you would want to
 create and use roles at a page level or at a site level. Admin will allow for all site level configuration such as 
-the site settings dialog. The page level roles are any role that you might choose to apply to specific pages. 
+the site settings dialogue. The page level roles are any role that you might choose to apply to specific pages. 
 
-Within the page settings dialog there is also a roles tab. This tab will list the available roles and where or not
+Within the page settings dialogue there is also a roles tab. This tab will list the available roles and where or not
 the role has permission to perform specific tasks. You can restrict roles to either allow/disallow the following actions.
 
 - Viewing of the current page
@@ -54,7 +54,7 @@ the role has permission to perform specific tasks. You can restrict roles to eit
 
 ## Reset Password
 
-Another feature of the authorisation that comes with Whppt out of the box is the ability for a user to reset their 
+Another feature of the authentication that comes with Whppt out of the box is the ability for a user to reset their 
 password. However, this will really only work with SMTP details provided and configured correctly as it requires an email
 to be sent to the user requesting their password reset. 
 
