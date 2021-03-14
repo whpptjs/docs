@@ -41,10 +41,10 @@ new Nuxt app.
 - TODO: explain some of the options
 - TODO: check if we can run cmds for create user and add a domain / See creating a user in api
 
-When, the new project has been created there are a few things we need to make sure are set up before we continue,
+When, the new project has been created there are a few things we need to make sure are set up before we continue.
 First up, if you look in the root directory of the new project you will find a `.env` file. Nuxt doesn't usually
 come with a `.env` file out of the box but Whppt does. Inside the `.env` file there will be multiple keys value pairs
-set where the value is empty. We're going to need to configure some of there before we can move on.
+set where the value is empty. We're going to need to configure some of them before we can move on.
 
 ## Manual Installation
 
