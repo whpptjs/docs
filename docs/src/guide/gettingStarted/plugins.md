@@ -73,6 +73,7 @@ export default {
   name: "generic",
   label: "Generic",
   collection: { name: "pages" /* other collection options */ },
+  contentSections: ["content-top", "content-bottom"],
   templates: [],
   components: [],
 };
@@ -178,17 +179,19 @@ const pageType = {
   /* rest of the pageType object goes here */
 };
 
-pagetype.components = {
-  key: "MyComponent",
-  label: "My Component",
-  componentType: "People",
-  init({ $set }, content) {
-    return content;
+pageType.components = [
+  {
+    key: "MyComponent",
+    label: "My Component",
+    componentType: "People",
+    init({ $set }, content) {
+      return content;
+    },
+    previewInit({ $set }, content) {
+      return content;
+    },
   },
-  previewInit({ $set }, content) {
-    return content;
-  },
-};
+];
 ```
 
 Let's break down the above. The `componentType` attribute is what will be used internally with the

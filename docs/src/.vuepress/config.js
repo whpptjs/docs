@@ -30,7 +30,7 @@ module.exports = {
    */
   themeConfig: {
     docsRepo: "whpptjs/docs",
-    docsDir: "docs",
+    docsDir: "docs/src",
     docsBranch: "main",
     editLinks: true,
     editLinkText: "Help us improve this page!",
@@ -41,7 +41,7 @@ module.exports = {
         link: "/guide/gettingStarted/prerequisites",
       },
       {
-        text: "Api",
+        text: "API",
         link: "/api/",
       },
       // {
@@ -98,9 +98,6 @@ module.exports = {
           path: "/api/",
           collapsable: false,
           children: [
-            "config",
-            "users/cli",
-            "domains",
             {
               title: "Plugins",
               sidebarDepth: 1,
@@ -112,6 +109,7 @@ module.exports = {
                 "plugins/editors",
                 "plugins/lifecycleHooks",
                 "plugins/templates",
+                "plugins/components",
               ],
             },
             {
@@ -128,6 +126,7 @@ module.exports = {
                 "directives/richText",
                 "directives/formattedText",
                 "directives/image",
+                "directives/actions",
                 "directives/custom",
               ],
             },
