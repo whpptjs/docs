@@ -1,6 +1,8 @@
 # Rich Text
 
-## Example
+<!-- TODO: Description -->
+
+## Usage
 
 ```vue
 <template>
@@ -18,6 +20,9 @@ export default {
 
 ## Props
 
-Properties: `content<Object>`, `property<String>`
+<!-- TODO: List all props -->
+<!-- Properties: `content<Object>`, `property<String>` -->
 
 ## Classes / Styling
+
+<!-- TODO: List all classes -->

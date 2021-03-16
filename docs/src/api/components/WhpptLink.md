@@ -1,6 +1,8 @@
 # Whppt Link
 
-## Example
+<!-- TODO: Description -->
+
+## Usage
 
 ```vue
 <template>
@@ -18,6 +20,9 @@ export default {
 
 ## Props
 
-Properties: `to<Object>`
+<!-- TODO: List all props -->
+<!-- Properties: `to<Object>` -->
 
 ## Classes / Styling
+
+<!-- TODO: List all classes -->

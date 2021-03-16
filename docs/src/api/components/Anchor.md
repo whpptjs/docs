@@ -1,6 +1,8 @@
 # Anchor
 
-## Example
+<!-- TODO: Component description -->
+
+## Usage
 
 ```vue
 <template>
@@ -21,6 +23,10 @@ export default {
 
 ## Props
 
+<!-- TODO: all properties in table view  -->
+
 Properties: `content<Object>`, `property<String>`
 
 ## Classes / Styling
+
+<!-- TODO: all available classes -->

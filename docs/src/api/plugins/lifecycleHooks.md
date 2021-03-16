@@ -1,6 +1,6 @@
 # Lifecycle Hooks
 
-- beforePublish
-- afterPublish
-- beforeUnpublish
-- afterUnpublish
+<!-- TODO: beforePublish -->
+<!-- TODO: afterPublish -->
+<!-- TODO: beforeUnpublish -->
+<!-- TODO: afterUnpublish -->

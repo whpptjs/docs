@@ -1,19 +1,20 @@
 # Site Settings
 
-- All API details of siteSettings here.
-- Component props
-- siteSetting mixin
+<!-- TODO: All API details of siteSettings here. -->
+<!-- TODO: Component props -->
 
-```js 
+<!-- TODO: Explain mixin below and how to use it -->
+
+```js
 // mixin
-import { mapActions } from 'vuex';
+import { mapActions } from "vuex";
 
 export default {
-props: {
+  props: {
     settings: { type: Object, required: true },
   },
   methods: {
-    ...mapActions('whppt-nuxt/site', ['saveSiteSettings']),
+    ...mapActions("whppt-nuxt/site", ["saveSiteSettings"]),
     saveSettings(settings) {
       const siteSettings = {
         ...this.settings,

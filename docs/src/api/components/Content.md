@@ -1,6 +1,8 @@
 # Content
 
-## Example
+<!-- TODO: Description -->
+
+## Usage
 
 ```vue
 <template>
@@ -21,8 +23,8 @@ export default {
 
 ## Props
 
-- List of props and their descriptions go here
+<!-- TODO: List of props and their descriptions go here -->
 
 ## Classes / Styling
 
-- List of available classes here.
+<!-- TODO: List of available classes here. -->

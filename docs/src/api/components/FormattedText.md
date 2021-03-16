@@ -1,6 +1,8 @@
 # Formatted Text
 
-## Example
+<!-- TODO: Description -->
+
+## Usage
 
 ```vue
 <template>
@@ -18,9 +20,9 @@ export default {
 
 ## Props
 
-- List of props and their descriptions go here
-- Properties: `content<Object>`, `property<String>`
+<!-- TODO: List of props and their descriptions go here -->
+<!-- Properties: `content<Object>`, `property<String>` -->
 
 ## Classes / Styling
 
-- List of available classes here.
+<!-- TODO: List of available classes here. -->

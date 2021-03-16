@@ -33,9 +33,13 @@ The Whppt actions directives is used to insert a floating menu for components. W
 
 ### content
 
+<!-- TODO: content arg -->
+
 ### Actions
+
+<!-- TODO: action arg -->
 
 ## Styles
 
-- Icons
-- Overriding the styles
+<!-- TODO: Icons -->
+<!-- TODO: Overriding the styles -->

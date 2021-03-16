@@ -1,6 +1,6 @@
 # Templates
 
-- vue templates
-- key
-- label
-- init hook
+<!-- TODO: vue templates -->
+<!-- TODO: key -->
+<!-- TODO: label -->
+<!-- TODO: init hook -->

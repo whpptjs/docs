@@ -38,8 +38,8 @@ Where `<project-name>` is the name of the directory that will be created.
 Once run, you will be prompted for a few things, very similar to the prompts found when creating a
 new Nuxt app.
 
-- TODO: explain some of the options
-- TODO: check if we can run cmds for create user and add a domain / See creating a user in api
+<!-- TODO: explain some of the options -->
+<!-- TODO: check if we can run cmds for create user and add a domain / See creating a user in api -->
 
 When, the new project has been created there are a few things we need to make sure are set up before we continue.
 First up, if you look in the root directory of the new project you will find a `.env` file. Nuxt doesn't usually

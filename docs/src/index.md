@@ -1,4 +1,4 @@
----	
+---
 home: true
 heroText: WhpptJS
 tagline: Extending Nuxt into a full featured CMS framework.

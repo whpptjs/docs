@@ -197,9 +197,7 @@ pageType.components = [
 Let's break down the above. The `componentType` attribute is what will be used internally with the
 <router-link to="/guide/gettingStarted/components.html#content">Whppt Content Component</router-link>.
 
-[comment]: <> (TODO: Solve components imports and document how here)
-
-- componentType, if still necessary
+<!-- TODO: How to register components e.g. global or custom implementation -->
 
 Components have 2 hooks that can be registered here. The most important one is the `init` hooks as seen about. We can
 provide an init function to the component. This hook is used to create default data per components, this is necessary to

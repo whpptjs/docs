@@ -1,10 +1,10 @@
 # Environment
 
-- TODO: Explain how whppt uses env variables
+<!-- TODO: Explain how whppt uses env variables -->
 
 ## .env file
 
-- TODO: Explain using it in dev
+<!-- TODO: Explain using it in dev -->
 
 - APP_KEY
 - MONGO_URL
@@ -19,12 +19,12 @@
 
 ## AWS - Commandline
 
-- TODO: Explain AWS ecs
+<!-- TODO: Explain AWS ecs -->
 
 ## AWS - Docker
 
-- TODO: Explain AWS ecs
+<!-- TODO: Explain AWS ecs -->
 
 ## AWS - ECS
 
-- TODO: Explain AWS ecs
+<!-- TODO: Explain AWS ecs -->
