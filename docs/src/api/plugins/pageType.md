@@ -2,7 +2,7 @@
 
 <!-- TODO: name should be renamed to key -->
 
-## name
+## Name
 
 A `pageType` can have a property called `name`. The name is a used as a key for each `pageType`. The `name` property should be Kebab case, Camel Case or Pascal Case.
 
@@ -14,7 +14,7 @@ A `pageType` can have a property called `name`. The name is a used as a key for 
 }
 ```
 
-## label
+## Label
 
 A `pageType` can have a property called `label`. The label is used to assign a display value to the `pageType`.
 This is mainly used within the Whppt UI when selecting which page type to use.
@@ -27,7 +27,7 @@ This is mainly used within the Whppt UI when selecting which page type to use.
 }
 ```
 
-## collection
+## Collection
 
 `collection` is an object that can be passed declared on a `pageType`. The `collection` can hold 2 properties,
 One is the `name` property while the other is `excludeFromSitemap`.
@@ -46,7 +46,7 @@ See [Sitemaps](/guide/gettingStarted/sitemaps) for more information on `excludeF
 }
 ```
 
-## contentSections
+## Content Sections
 
 `contentSections` are a way to inform whppt of how many content sections your `pageType` may have.
 This allows some features of whppt to function better, for example, Cloning a content component from one
@@ -61,12 +61,12 @@ If for some reason you require multiple content section on a page, you can inser
 contentSections: ['contentTop', 'contentBottom'],
 ```
 
-## templates
+## Templates
 
 The `templates` key on a `pageType` is an array of available templates. This allows a single `pageType` to have multiple templates. Each template can initialise it's own data.
 See the <RouterLink to="/guide/gettingStarted/plugins.html#templates">templates guide</RouterLink> or the [templates api docs](/api/plugins/templates) for more information.
 
-## components
+## Components
 
 The `components` key on a `pageType` is another array, this array will contain available components for any pages created with the `pageType`. See
 <RouterLink to="/guide/gettingStarted/plugins.html#templates">components guide</RouterLink> or the [components api docs](/api/plugins/components) for more information.
