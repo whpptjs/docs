@@ -10,7 +10,7 @@ import MyPageSettingComponentB from '../path/to/MyPageSettingComponentB';
 export default {
   // Register a single tab
   pageSettings: {
-    name: "themes",
+    key: "themes",
     label: "Themes",
     component: MyPageSettingComponentA,
   }
@@ -18,12 +18,12 @@ export default {
   // or register multiple...
   pageSettings: [
     {
-      name: "themes",
+      key: "themes",
       label: "Themes",
       component: MyPageSettingComponentA,
     },
     {
-      name: "language",
+      key: "language",
       label: "Language",
       component: MyPageSettingComponentB,
     }
@@ -31,23 +31,24 @@ export default {
 }
 ```
 
-## Name
+## Key
 
-<!-- TODO: name description -->
+The `key` property is used as an identifier for each page setting. This value should be a unique string and be Kebab
+case, Camel case or Pascal case.
 
 ### Usage
 
 ```js
 export default {
   pageSettings: {
-    name: "themes",
+    key: "themes",
   },
 };
 ```
 
 ## Label
 
-<!-- TODO: label description -->
+The `label` property is used for display purposes, for example the name of the page setting tab.
 
 ### Usage
 
@@ -61,7 +62,8 @@ export default {
 
 ## Component
 
-<!-- TODO: component description -->
+The `component` key accepts a Vue component. This component is what is rendered inside the `pageSettings` dialogue
+tab that will be registered for you.
 
 ### Usage
 
@@ -77,4 +79,30 @@ export default {
 
 ## Page Settings Mixin
 
-<!-- TODO: usage and description -->
+The page settings mixin can be imported into and used by your page settings component to expose some useful
+functionality that you'll likely need within your component.
+
+### Usage
+
+```vue
+<script>
+import PageSettingsMixin from "@whppt/nuxt/lib/util/mixins/pageSettings";
+
+export default {
+  name: "MyPageSettingComponent",
+  mixins: [PageSettingsMixin],
+};
+</script>
+```
+
+### Props
+
+| Name | Type   | Description                                                                              |
+| ---- | ------ | ---------------------------------------------------------------------------------------- |
+| page | Object | The current page object, Settings can be applied to the page e.g. `page.myCustomSetting` |
+
+### Methods
+
+| Name         | Args   | Description                                                                       |
+| ------------ | ------ | --------------------------------------------------------------------------------- |
+| saveSettings | (page) | Merge your changes within the page argument with the current page state and save. |
