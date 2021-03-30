@@ -84,6 +84,11 @@ module.exports = {
                 "gettingStarted/authentication",
               ],
             },
+            {
+              title: "Diving Deeper",
+              sidebarDepth: 1,
+              children: ["divingDeeper/extractingContent"],
+            },
             // {
             //   title: "Deployment",
             //   sidebarDepth: 1,
