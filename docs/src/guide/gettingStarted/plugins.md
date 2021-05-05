@@ -190,6 +190,8 @@ pageType.components = [
     previewInit({ $set }, content) {
       return content;
     },
+    //optional
+    hideSpacingInContent: true,
   },
 ];
 ```
