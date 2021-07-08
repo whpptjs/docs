@@ -76,6 +76,8 @@ export default {
   contentSections: ["content-top", "content-bottom"],
   templates: [],
   components: [],
+  extractImages: () => [],
+  extractLinks: () => [],
 };
 ```
 
@@ -190,9 +192,19 @@ pageType.components = [
     previewInit({ $set }, content) {
       return content;
     },
+    extractImages(content) {
+      if (content.image) return [content.image.imageId]
+      return []
+    },
+    extractLinks(content) {
+      if (content.link) return [content.link.href]
+      return []
+    },
   },
 ];
 ```
+
+Note: Prior to 2.0.0-54, base Whppt components such as `richText` were included on all `pageTypes` by default. In 2.0.0-54 and after, these components must be imported from `@whppt/nuxt` and added to each `pageType` that needs them.
 
 Let's break down the above. The `componentType` attribute is what will be used internally with the
 <router-link to="/guide/gettingStarted/components.html#content">Whppt Content Component</router-link>.
@@ -216,3 +228,50 @@ init({ $set }, content = {}) {
 
 The `previewInit` hook works the same as the `init` hook, however this hook will only be used when viewing the preview
 of components. This allows you to set up better examples for each component.
+
+The `extractImages` and `extractLinks` functions are also applicable to `pageTypes`, and are explained in more detail below.
+
+## Extract Images
+
+Extract Images or `pageType.extractImages` within a plugin are a way to retrieve any possible places that images can be used for specific `pageTypes`.
+It's used for generating the page `dependencies`, which will keep track of which images are used and on what pages to prevent the deletion of an image in use.
+Below is an example of what an extractImages function can look like, the only difference being that the component version receives `content` as its argument, while the `pageType` version receives the `page` object.
+
+```js
+const pageType = {
+  /* rest of the pageType object goes here */
+};
+
+pageType.extractImages = (page) => {
+  if (page.image) return [page.image.imageId]
+  return []
+};
+```
+
+The `extractImages` function receives the page as its only argument. 
+If the `pageType` contains multiple templates with different locations for images, it's necessary to differentiate between them, e.g. with a switch statement for each template.
+It should return an array of the `imageIds` of any possible images on the `pageType`. If there are none, then a function doesn't need to be provided.
+Whppt will ignore any empty values, so every possible `imageId` can be returned from the function even if it may not be defined.
+
+
+## Extract Links
+
+Extract Links or `pageType.extractLinks` within a plugin are a way to retrieve any possible places that links can be used for specific `pageTypes`.
+It's used for generating the page `dependencies`, which will keep track of which links are used and on what pages to prevent the deletion of a page that is referenced in any links on the site.
+Below is an example of what an extractLinks function can look like
+
+```js
+const pageType = {
+  /* rest of the pageType object goes here */
+};
+
+pageType.extractLinks = (page) => {
+  if (page.link) return [page.link.href]
+  return []
+};
+```
+
+The `extractLinks` function receives the page as its only argument. 
+If the `pageType` contains multiple templates with different locations for links, it's necessary to differentiate between them, e.g. with a switch statement for each template.
+It should return an array of the `hrefs` of any possible links on the `pageType`. If there are none, then a function doesn't need to be provided.
+Whppt will ignore any empty values, so every possible `href` can be returned from the function even if it may not be defined.
