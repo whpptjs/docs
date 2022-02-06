@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class", // or 'media' or 'class'
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
       transparent: "transparent",
@@ -18,9 +17,6 @@ module.exports = {
         900: "#000",
       },
     },
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
