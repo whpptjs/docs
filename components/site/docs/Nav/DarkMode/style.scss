@@ -1,0 +1,19 @@
+.darkMode {
+  &__actions {
+    @apply flex flex-col space-y-2;
+  }
+
+  &Action {
+    @apply flex items-center;
+    @apply p-1 pl-3 pr-5;
+    @apply hover:bg-slate-800;
+
+    &__icon {
+      @apply w-7;
+      @apply pr-2;
+    }
+    &__title {
+      @apply text-slate-300;
+    }
+  }
+}

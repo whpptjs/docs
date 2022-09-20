@@ -1,0 +1,18 @@
+.docsLayout {
+  @apply bg-slate-300 dark:bg-slate-900;
+  @apply min-h-screen w-full;
+
+  &__content {
+    @apply container flex;
+  }
+
+  &__left,
+  &__right {
+    @apply w-3/12;
+  }
+
+  &__main {
+    @apply w-9/12;
+    @apply pt-4;
+  }
+}

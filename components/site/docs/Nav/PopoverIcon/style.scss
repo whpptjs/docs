@@ -1,0 +1,12 @@
+.popoverIcon {
+  &__icon {
+    @apply w-6 h-6;
+    @apply hover:text-slate-300;
+  }
+
+  &__panel {
+    @apply absolute right-0 top-full;
+    @apply py-2 rounded-lg;
+    @apply bg-slate-700;
+  }
+}

@@ -1,0 +1,25 @@
+.leftNav {
+  @apply pt-4;
+}
+
+.leftNavGroup {
+  &__title {
+    @apply text-lg;
+    @apply mt-4;
+  }
+
+  &__panel {
+    @apply mt-4;
+  }
+
+  &__item {
+    @apply pl-3;
+    @apply border-l border-l-slate-400 hover:border-l-slate-200;
+    @apply text-slate-400 hover:text-slate-200;
+
+    &--active {
+      @apply border-l-sky-400;
+      @apply text-sky-400;
+    }
+  }
+}

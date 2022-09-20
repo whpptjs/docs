@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./normalise.scss";
+@import "./richText.scss";
+@import "../components/style.scss";

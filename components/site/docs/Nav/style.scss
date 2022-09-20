@@ -1,0 +1,30 @@
+@import "./DarkMode/style.scss";
+@import "./Github/style.scss";
+@import "./PopoverIcon/style.scss";
+
+.docsNav {
+  @apply border-b border-b-slate-500 border-opacity-50;
+  @apply sticky backdrop-blur;
+
+  &__inner {
+    @apply container relative;
+    @apply flex items-center justify-between;
+  }
+
+  &__right {
+    @apply flex;
+  }
+
+  &__divider {
+    @apply mx-3 border-r border-r-slate-600;
+  }
+
+  &__menuLink {
+    @apply hover:text-sky-600;
+  }
+
+  &__actions {
+    @apply flex items-center space-x-4;
+    @apply dark:text-slate-400;
+  }
+}

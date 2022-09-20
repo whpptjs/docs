@@ -1,0 +1,15 @@
+.docsHeader {
+  &__header {
+    @apply text-sky-400;
+  }
+  &__title {
+    @apply text-slate-200;
+    @apply font-bold text-3xl;
+    @apply pt-3;
+  }
+  &__description {
+    @apply text-slate-400;
+    @apply text-xl;
+    @apply pt-2;
+  }
+}
