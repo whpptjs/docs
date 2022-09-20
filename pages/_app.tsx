@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps<DocsPageProps>) {
       page={initPage(pageProps)}
       domain={pageProps.domain}
       editors={editors}
-      error={(error) => {
+      error={(error: Error) => {
         return <ClientError error={error} />;
       }}
     >
