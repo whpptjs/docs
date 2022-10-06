@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "api": "cd api && ts-node-dev --respawn --transpile-only www",
+    "db:mongo": "run-rs --keep"
   },
   "dependencies": {
     "@whppt/next": "^0.0.3-next.16",
@@ -17,15 +19,22 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.14",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
+    "@whppt/api-express": "^2.0.0-next.9",
     "autoprefixer": "^10.4.11",
+    "dotenv": "^16.0.3",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
     "postcss": "^8.4.16",
+    "run-rs": "^0.7.7",
     "sass": "^1.54.9",
     "tailwindcss": "^3.1.8",
+    "ts-node-dev": "^2.0.0",
     "typescript": "4.8.3"
   }
 }
