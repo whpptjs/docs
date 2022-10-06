@@ -3,7 +3,7 @@
 Duplicate the api/.env.example file to api/.env and replace the S3 secret access key.
 
 ```bash
-cp api/.env.example api/.env
+cp server/.env.example api/.env
 ```
 
 ```
