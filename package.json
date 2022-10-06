@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "api": "cd api && ts-node-dev --respawn --transpile-only www",
+    "api": "cd server && ts-node-dev --respawn --transpile-only www",
     "db:mongo": "run-rs --keep"
   },
   "dependencies": {
