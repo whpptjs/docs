@@ -1,6 +1,16 @@
 ## Getting Started
 
-To get started in development you will need to be running 3 terminals.
+Duplicate the api/.env.example file to api/.env and replace the S3 secret access key.
+
+```bash
+cp api/.env.example api/.env
+```
+
+```
+S3_SECRET_ACCESS_KEY=<Your Key Here>
+```
+
+To get run the site in development you will need to be running 3 terminals.
 
 In the first, run the databse cluster:
 
