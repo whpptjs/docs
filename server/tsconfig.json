@@ -21,6 +21,6 @@
     "strict": true,
     "target": "es6"
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules"]
 }
