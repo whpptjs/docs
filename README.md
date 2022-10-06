@@ -8,14 +8,17 @@ This repository is the home of the core documentation for the 3 main WhpptJS mod
 
 ## Getting started in development
 
-Duplicate the api/.env.example file to api/.env and replace the S3 secret access key.
+Duplicate the server env example and replace the S3 secret access key in `server/.env`
 
 ```bash
-cp server/.env.example api/.env
+cp server/.env.example server/.env
 ```
 
 ```
+# server/.env
+...
 S3_SECRET_ACCESS_KEY=<Your Key Here>
+...
 ```
 
 To get run the site in development you will need to be running 3 terminals.
